@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <h1 style="text-align:center;">MY PORTFOLIO</h1>
+  <div class="navbar">
+    <button onclick="window.location.href='https://tunis-nextjs.netlify.app/home-rtl'"> 
+      <a href="https://tunis-nextjs.netlify.app/home-rtl">MOCKUP</a>
+    </button>
+    <button onclick="window.location.href='https://tunis-nextjs.netlify.app/home-rtl'"> 
+      <a href="https://tunis-nextjs.netlify.app/home-rtl">GRAPHIC DESIGN</a>
+    </button>
+    <button onclick="window.location.href='https://tunis-nextjs.netlify.app/home-rtl'"> 
+      <a href="https://tunis-nextjs.netlify.app/home-rtl">VIDEO</a>
+    </button>
+    <button onclick="window.location.href='https://tunis-nextjs.netlify.app/home-rtl'"> 
+      <a href="https://tunis-nextjs.netlify.app/home-rtl">LOGO</a>
+    </button>
+    <button onclick="window.location.href='https://tunis-nextjs.netlify.app/home-rtl'"> 
+      <a href="https://tunis-nextjs.netlify.app/home-rtl">ALL</a>
+    </button>
+  </div>
+ 
+  <div class="grid-container">
+    <div class="row slide-in">
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-3.c1ae3f32.jpg&w=1080&q=75" alt="Item 1">
+      </div>
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-1.3cb250b1.jpg&w=1080&q=75" alt="Item 2">
+      </div>
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-2.f5a228df.jpg&w=1080&q=75" alt="Item 3">
+      </div>
+    </div>
+    <div class="row slide-in">
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-6.97d38976.jpg&w=1080&q=75" alt="Item 4">
+      </div>
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-5.9d9c9e19.jpg&w=1080&q=75" alt="Item 5">
+      </div>
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-9.67d36946.jpg&w=1080&q=75" alt="Item 6">
+      </div>
+    </div>
+    <div class="row slide-in">
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-8.5013e616.jpg&w=1080&q=75" alt="Item 7">
+      </div>
+      <div class="grid-item">
+        <img src="https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-7.86186e33.jpg&w=1080&q=75" alt="Item 8">
+      </div>
+      <div class="grid-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqP8jerSRXIme9ZpsyitpxlBL0WhIoIE8hg&s" alt="Item 9">
+      </div>
+    </div>
+  </div>
+
+  <script>
+  
+    const rows = document.querySelectorAll('.row');
+    rows.forEach((row, index) => {
+      row.style.animationDelay = `${index * 0.3}s`;
+    });
+  </script>
+</body>
+</html>

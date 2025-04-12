@@ -1,0 +1,47 @@
+.row{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:start;
+	
+}
+
+.text-center{
+	font-size:20px;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  width:100%;
+}
+
+h1 span {
+  color: #ffc107;
+}
+/* Container for circular progress */
+.circular-progress {
+  position:relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ffc107 calc(var(--percent,5) * 1%),
+    #333 calc(var(--percent,30) * 3%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress span {
+  position:relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Dynamic percentage */
+.circular-progress[100%] {
+  --percent: attr(100%);
+}
+
